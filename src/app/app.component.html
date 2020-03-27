@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+
+ <div style="text-align:center">
+    <h2>
+        Country list from local json file...
+    </h2>
+    <ul *ngFor="let item of model">
+       <li>
+          <h3>Country Name :{{item.Post}}, Code: {{item.CanEdit}}</h3>
+       </li>
+    </ul>
+</div>
