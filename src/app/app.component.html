@@ -4,9 +4,10 @@
     <h2>
         Country list from local json file...
     </h2>
-    <ul *ngFor="let item of model">
-       <li>
-          <h3>Country Name :{{item.Post}}, Code: {{item.CanEdit}}</h3>
-       </li>
-    </ul>
+    <div *ngFor="let item of model">
+                 
+
+       <input type = "text" name = "emailid" placeholder = "emailid" value="{{item.Post}}">
+       <input type = "text" name = "emailid" placeholder = "emailid" value="{{item.CanEdit}}">
+    </div>
 </div>
