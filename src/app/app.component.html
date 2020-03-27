@@ -1,13 +1,31 @@
 
 
- <div style="text-align:center">
-    <h2>
-        Country list from local json file...
-    </h2>
-    <div *ngFor="let item of model">
-                 
+ 
 
-       <input type = "text" name = "emailid" placeholder = "emailid" value="{{item.Post}}">
-       <input type = "text" name = "emailid" placeholder = "emailid" value="{{item.CanEdit}}">
-    </div>
-</div>
+<div class='panel panel-primary'>  
+    <div class='panel-heading'>  
+        {{title}}  
+    </div>   
+    <div class='panel-body'>  
+        <div class='table-responsive'>  
+            <table class='table'>  
+                <thead>  
+                    <tr>  
+                        <th>Title</th>  
+                        <th>Director</th>  
+                        <th>Cast</th>  
+                        <th>Release Date</th>  
+                    </tr>  
+                </thead>  
+                <tbody>  
+                    <tr *ngFor="let item of models">  
+                        <td> <input type = "text" name = "emailid" placeholder = "emailid" value="{{item.Post}}"></td>  
+                        <td></td>  
+                        <td></td>  
+                        <td></td>  
+                    </tr>  
+                </tbody>  
+            </table>  
+        </div>  
+    </div>  
+</div>  
